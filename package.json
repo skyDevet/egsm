@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host --port 3000",
-    "build": "vite build",
-    "preview": "vite preview --host",
-    "build:github": "GITHUB_PAGES=true vite build --mode github-pages",
-    "deploy": "npm run build:github && npx gh-pages -d dist -b gh-pages",
+    "dev": "vite --host --port 3000 --base=/egsm/",
+    "build": "vite build --base=/egsm/",
+    "preview": "vite preview --host --base=/egsm/",
+    "build:github": "vite build --base=/egsm/",
+    "deploy": "npm run build:github && npx gh-pages -d dist -b gh-pages -r https://github.com/skyDevet/egsm.git",
     "capacitor:add": "npx cap add android",
     "capacitor:sync": "npx cap sync",
     "capacitor:open": "npx cap open android"
