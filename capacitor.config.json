@@ -1,0 +1,5 @@
+{
+  "appId": "com.hello.world",
+  "appName": "Hello World",
+  "webDir": "dist"
+}
